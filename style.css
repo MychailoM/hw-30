@@ -1,0 +1,43 @@
+.box {
+    width: 100px;
+    height: 100px;
+    animation-name: box;
+    position: relative;
+    background-color: aqua;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+}
+
+@keyframes box {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    25% {
+        top: 500px;
+        left: 0;
+        background-color: blue;
+    }
+
+    50% {
+        top: 500px;
+        left: 500px;
+        background-color: green;
+
+    }
+
+    75% {
+        top: 0;
+        left: 500px;
+        background-color: yellow;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}
